@@ -1,0 +1,30 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open --browser chrome --e2e",
+    "cypress:runDefault": "cypress run --spec cypress/integration/pom/*.spec.js",
+    "cypress:chrome": "cypress run --browser chrome --spec cypress/integration/pom/*.spec.js",
+    "cypress:edge": "cypress run --browser edge --spec cypress/integration/pom/*.spec.js",
+    "runHeadless": "./node_modules/bin/cypress run --runHeadless"
+  },
+  "keywords": [
+    "e2e",
+    "automation",
+    "framework",
+    "cypress"
+  ],
+  "author": "Sifatul Jannat",
+  "license": "ISC",
+  "devDependencies": {
+    "@applitools/eyes-cypress": "^3.25.5",
+    "@cypress-audit/lighthouse": "^1.3.0",
+    "cypress": "^9.7.0",
+    "cypress-grep": "^2.5.3",
+    "cypress-mochawesome-reporter": "^3.0.1",
+    "cypress-xpath": "^2.0.1"
+  }
+}
